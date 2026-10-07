@@ -75,8 +75,6 @@ const SERVICES = [
     title: "Scoreboard",
     description:
       "Times equilibrados, placar ao vivo e histórico de partidas com código de grupo compartilhável.",
-    url: "https://placar.nahes.com.br/",
-    host: "placar.nahes.com.br",
     icon: "⚽",
   },
   {
@@ -86,8 +84,6 @@ const SERVICES = [
     title: "Cupom Bot",
     description:
       "Cupons do Mercado Livre com login seguro e extensão Chrome para consulta rápida.",
-    url: "https://cupons.nahes.com.br/",
-    host: "cupons.nahes.com.br",
     icon: "🏷️",
   },
   {
@@ -97,8 +93,6 @@ const SERVICES = [
     title: "Calculadora de Milheiros",
     description:
       "Descubra o valor do milheiro — quanto você paga por cada mil milhas adquiridas.",
-    url: "https://milhas.nahes.com.br/",
-    host: "milhas.nahes.com.br",
     icon: "✈️",
   },
   {
@@ -108,8 +102,6 @@ const SERVICES = [
     title: "Calculadora de Custo — Impressão 3D",
     description:
       "Estime o custo por peça com filamento, tempo de mesa, energia, desgaste, extras e margem de lucro.",
-    url: "https://3dcalculator.nahes.com.br/",
-    host: "3dcalculator.nahes.com.br",
     icon: "🖨️",
   },
   {
@@ -119,8 +111,6 @@ const SERVICES = [
     title: "Mensagem do Dia",
     description:
       "Frase ou reflexão do dia — página web com consulta por data ou sorteio aleatório.",
-    url: "https://sni.nahes.com.br/",
-    host: "sni.nahes.com.br",
     icon: "✨",
   },
   {
@@ -128,11 +118,9 @@ const SERVICES = [
     category: "iot",
     subsection: "agricultura",
     name: "Agricultura",
-    title: "AgriTecno Dashboard",
+    title: "Painel para Agricultura de Precisão",
     description:
-      "Painel web para monitoramento e gestão da plataforma LoRa — sensores, gateway e API em tempo real.",
-    url: "https://painel.agritecno.com.br/",
-    host: "painel.agritecno.com.br",
+      "Painel web para agricultura de precisão — monitoramento LoRa, sensores, gateway e API em tempo real.",
     icon: "🌱",
   },
   {
@@ -143,8 +131,6 @@ const SERVICES = [
     title: "Automação & Controle",
     description:
       "Projetos IoT para automação industrial — sensores, atuadores, integração de sistemas e dashboards sob demanda.",
-    url: "mailto:contato@nahes.com.br",
-    host: "sob demanda",
     icon: "⚡",
   },
   {
@@ -155,8 +141,6 @@ const SERVICES = [
     title: "Integração com Tags NFC",
     description:
       "Projetos com tags NFC — rastreio, automação e interação por aproximação em campo ou operação.",
-    url: "mailto:contato@nahes.com.br",
-    host: "sob demanda",
     icon: "📲",
   },
   {
@@ -167,8 +151,6 @@ const SERVICES = [
     title: "Ford Information Collector",
     description:
       "Consulta de VIN Ford: As-Built, parâmetros CCC, Node IDs e decodificação ISO 3779 com cache local.",
-    url: "https://fic.nahes.com.br/",
-    host: "fic.nahes.com.br",
     icon: "🚗",
   },
   {
@@ -179,8 +161,6 @@ const SERVICES = [
     title: "CAN Bus Analyzer",
     description:
       "Analisador CAN multiplataforma com SLCAN, decoders OBD-II/FTCAN/VAG BAP, gateway, playback e transmissão em tempo real.",
-    url: "https://github.com/phnahes/can-bus-analyzer",
-    host: "github.com/phnahes/can-bus-analyzer",
     icon: "📊",
   },
   {
@@ -191,8 +171,6 @@ const SERVICES = [
     title: "ODIS Backup Decoder",
     description:
       "Decodificador de relatórios ODIS Engineering — visualização de dados de diagnóstico VW em HTML/XML.",
-    url: "https://odisviewer.nahes.com.br/",
-    host: "odisviewer.nahes.com.br",
     icon: "🔧",
   },
   {
@@ -203,8 +181,6 @@ const SERVICES = [
     title: "ABS LongCoding Decoder — EBC 460",
     description:
       "Decodificação de Long Coding hexadecimal do módulo ABS EBC 460 (PQ25, PQ26 e Premium) com validação de VIN.",
-    url: "https://ebc460.nahes.com.br/",
-    host: "ebc460.nahes.com.br",
     icon: "🛞",
   },
   {
@@ -215,8 +191,6 @@ const SERVICES = [
     title: "ABS LongCoding Decoder — MK60EC1",
     description:
       "Decodificador byte a byte do módulo ABS MK60EC1 para veículos do grupo VAG.",
-    url: "https://mk60ec1.nahes.com.br/",
-    host: "mk60ec1.nahes.com.br",
     icon: "🛞",
   },
   {
@@ -227,8 +201,6 @@ const SERVICES = [
     title: "Decodificador de VIN VW",
     description:
       "Validação e decodificação de VIN Volkswagen conforme ISO 3779 — WMI, modelo, ano e planta.",
-    url: "https://vwvindecoder.nahes.com.br/",
-    host: "vwvindecoder.nahes.com.br",
     icon: "🔍",
   },
 ];
@@ -270,7 +242,6 @@ function matchesQuery(service, query) {
     service.name,
     service.title,
     service.description,
-    service.host,
     category?.title,
     category?.description,
     subsection?.title,
