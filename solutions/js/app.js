@@ -12,6 +12,11 @@ const ENG_SUBSECTIONS = [
     description: "Análise e diagnóstico de redes CAN",
   },
   {
+    id: "rf",
+    title: "TPMS & RF",
+    description: "Sensores de pressão, 433 MHz e decodificação RF",
+  },
+  {
     id: "vw",
     title: "VW",
     description: "Decodificadores e ferramentas Volkswagen",
@@ -160,8 +165,18 @@ const SERVICES = [
     name: "Engenharia",
     title: "CAN Bus Analyzer",
     description:
-      "Analisador CAN multiplataforma com SLCAN, decoders OBD-II/FTCAN/VAG BAP, gateway, playback e transmissão em tempo real.",
+      "Analisador CAN open source e multiplataforma com SLCAN, decoders OBD-II/FTCAN/VAG BAP, gateway, playback e transmissão em tempo real.",
     icon: "📊",
+  },
+  {
+    id: "tpms-receiver",
+    category: "engenharia",
+    subsection: "rf",
+    name: "Engenharia",
+    title: "TPMS Receiver",
+    description:
+      "Receptor de referência para sensores TPMS GM/Schrader EG53MA4 — captura OOK/Manchester em 433 MHz, decodificação de pressão e temperatura e mapeamento por roda.",
+    icon: "📶",
   },
   {
     id: "odis-viewer",
